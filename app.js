@@ -5,7 +5,34 @@ var username = document.getElementById("username")
 var email = document.getElementById("Email")
 var password = document.getElementById("password")
 var regex=/^$/
+var question=[
+    {
+        ques : "wdfsdfgsdkfljfgakdsdflsdfskla",
+        a:"dsfsdfs",
+        b:"dsfsdfs",
+        c:"dsfsdfs",
+        d:"dsfsdfs",
+    },
+    {
+        ques : "erwryewiqew",
+        a:"nbbn",
+        b:"vbv",
+        c:"vcbcv",
+        d:"bnvb",
+    },
+    {
+        ques : "ljkpuupy",
+        a:"wqwewe",
+        b:"dsfwerewsdfs",
+        c:"wee",
+        d:"dsfsddwsdfs",
+    },
+            
 
+
+
+]
+var count = 0
 
 function submit(){
     var emailcheck = regex.test(email.value)
@@ -44,19 +71,34 @@ function start1(){
     <div class="head" id="head">
         <h1>Quiz App</h1>
     </div>
-    <p class="toptext" >Welcome to Quiz app <span class="user">${username.value}</span></p>
+    <h1 >Welcome to Quiz app <span class="user">${username.value}</span></h1>
     <div class="htmlqn" id="htmlqn">
     <h1>
     
-        
+       ${
+        question[count].ques
+       } 
     </h1>
-    
-    <button class="next" id="next" onclick="next()">Next</button>
+    <label for=""><input type="radio" name="gender"> ${
+        question[count].a
+       } </label>
+    <label for=""><input type="radio" name="gender"> ${
+        question[count].b
+       } </label>
+    <label for=""><input type="radio" name="gender"> ${
+        question[count].c
+       } </label>
+    <label for=""><input type="radio" name="gender"> ${
+        question[count].c}</label>
+
+
+ 
+    <button class="next" id="next" onclick="start1()">Next</button>
     </div>
     
     
     `
-    
+    count++
 }
 
 function login(){
@@ -78,7 +120,7 @@ main.innerHTML=
 <div class="head" id="head">
     <h1>Quiz App</h1>
 </div>
-<h1>Welcome to Quiz app <span class="user">${username.value}</span></h1>
+<h1 class="toptext">Welcome to Quiz app <span class="user">${username.value}</span></h1>
 <div class="html" id="html">
 <h1>
 
