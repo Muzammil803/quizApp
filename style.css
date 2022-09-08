@@ -9,13 +9,15 @@
 
 }
 .color{
-color: #1A1624    ;
+color: #eee    ;
 margin-left: 40px;
 margin-top: 20px;
 
 }
 
 #signup{
+    background-color: #123;
+    color: #eee;
 width: 400px;
 height:450px;
     display: flex;
@@ -71,14 +73,17 @@ margin-left: 40px;
 
 }
 .btn{
-    margin-top: 20px;
-    margin-left: 52px;
-    width: 75%;
+    /* margin-top: 20px;
+    margin-left: 52px; */
+    margin: 20px auto;
+    width: 65%;
     height: 30px;
     border-radius: 10px;
 border: 1px solid rgb(211, 211, 214);
-    
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding-right:20px;
 }
 .head{
     background-color: #FDEEDC;
@@ -106,14 +111,73 @@ align-items: center;
     font-size: 2rem !important;
     margin-left: 1rem !important;
 }
-.click{
-border: #E38B29 0.3px solid;
+.click{text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 width: 200px;
 height: 30px;
 border-radius: 10px;
-background-color: #FDEEDC;
+background-color: #eee;
 margin-top: 10px;
+
 }
 .user{
 color: #d37000;
+}
+
+.htmlqn{
+
+    margin: 10%  auto;
+    width:80%;
+    height:14rem;
+background-color: #FDEEDC;
+border: #E38B29 0.3px solid;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+/* justify-content:center ; */
+/* align-items: center; */
+
+
+}
+
+body{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.main2{
+background-color: #123;
+padding: 3rem 7rem;
+border-radius: 0.5rem;
+box-shadow: 5px 10px 5px rgba(47 47 47 0.5);
+color: #eee;
+}
+
+button{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+border-radius: 0.3rem;
+padding: 0.3rem 1rem;
+font-size: 1.2rem;
+background-color: #eee;
+
+
+
+
+}
+
+h3{
+    margin-top: 1rem;
+}
+
+ul li{
+    list-style: none;
 }
